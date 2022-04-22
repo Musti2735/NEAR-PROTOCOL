@@ -27,4 +27,4 @@ export class Player {
 
 export const vec = new PersistentVector<Player>("s")
 
-export const chain = new PersistentVector<GetPlayer>("m");
+

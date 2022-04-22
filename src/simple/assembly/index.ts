@@ -12,17 +12,19 @@ export function getPlayer(team:string): void {
     let itemLiv = liverpool[rand] 
     logging.log("You have selected Liverpool ! ")
     vec.push(itemLiv);  // write the given value at the given key to account (contract) storage
+    logging.log(`Seleceted item added storage : ${itemLiv.name} from ${itemLiv.club}`) //show the selected item to user
   }
   else if (team=="PSG"){
     let itemPSG = paris[rand]
     logging.log("You have selected PSG")
     vec.push(itemPSG);  
-    logging.log(`Seleceted item added storage : ${itemPSG.name} from ${itemPSG.club}`) //show the selected item to user
+    logging.log(`Seleceted item added storage : ${itemPSG.name} from ${itemPSG.club}`) 
   }
   else if (team=="MANU"){ 
     let itemManu = manchester[rand]
     logging.log("You have selected Manchester United")
     vec.push(itemManu);  
+    logging.log(`Seleceted item added storage : ${itemManu.name} from ${itemManu.club}`) 
   }
   else {
     logging.log("You must select only 'PSG','MANU','LIVERPOOL' !")
