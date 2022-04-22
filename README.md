@@ -49,5 +49,5 @@ For example :
 "near call $CONTRACT getPlayer '{"team":"PSG"}' --accountId mycodebag.testnet --amount 2"
 
 or RUN
-**./script/getContract.sh **
+**./script/2.getContract.sh **
 
