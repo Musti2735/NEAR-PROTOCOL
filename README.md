@@ -27,8 +27,8 @@ run near dev-delpoy ./build/release/simple.wasm
 
 export CONTRACT=dev-####-####
 
-or
-** Run ./scripts/1.dev-deploy.sh **
+or RUN
+**./scripts/1.dev-deploy.sh **
 
 
 ## Usage
@@ -48,6 +48,6 @@ It must be like that :
 For example : 
 "near call $CONTRACT getPlayer '{"team":"PSG"}' --accountId mycodebag.testnet --amount 2"
 
-or
-** Run 2.use-contract.sh **
+or RUN
+**./script/getContract.sh **
 
