@@ -29,7 +29,7 @@ export CONTRACT=dev-####-####
 
 or RUN
 
-**./scripts/1.dev-deploy.sh **
+./scripts/1.dev-deploy.sh
 
 
 ## Usage
@@ -51,7 +51,7 @@ For example :
 
 or RUN
 
-**./scripts/2.getContract.sh **
+./scripts/2.getContract.sh
 
 Finally, selected player adds the storage.
 
