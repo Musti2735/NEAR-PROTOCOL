@@ -28,6 +28,7 @@ run near dev-delpoy ./build/release/simple.wasm
 export CONTRACT=dev-####-####
 
 or RUN
+
 **./scripts/1.dev-deploy.sh **
 
 
@@ -49,5 +50,6 @@ For example :
 "near call $CONTRACT getPlayer '{"team":"PSG"}' --accountId mycodebag.testnet --amount 2"
 
 or RUN
-**./script/2.getContract.sh **
+
+**./scripts/2.getContract.sh **
 
