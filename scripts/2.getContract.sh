@@ -15,31 +15,26 @@ echo
 echo
 echo
 echo ---------------------------------------------------------
-echo "Step 1: Call 'view' functions on the contract"
-echo
-echo "(run this script again to see changes made by this file)"
+echo "Step 1: Call 'getPlayer' functions on the contract"
+echo "Step 2: Select a team. There are ony 3 teams 'PSG', 'MANU', 'LIVERPOOL' on contract. You must write one of this teams on the value of team parameter."
+echo "Step 3: Add your testnet account"
+echo "Step 4: Add 2 near deposit" 
+echo "It must be like that"
+echo "near view $CONTRACT getPlayer '{"team":"LIVERPOOL"}' --accountId mycodebag.testnet --amount 2"
 echo ---------------------------------------------------------
 echo
 
-near view $CONTRACT helloWorld
+near view $CONTRACT getPlayer '{"team":"value"}' --accountId youraccount.testnet --amount 2
 
 echo
 echo
-
-near view $CONTRACT read '{"key":"some-key"}'
-
 echo
 echo
 echo ---------------------------------------------------------
-echo "Step 2: Call 'change' functions on the contract"
+echo "Step 5: You see your player on the ./src/utils"
+echo "Step 6: run this comment on terminal 'yarn storage dev-###-###' "
 echo ---------------------------------------------------------
 echo
-
-# the following line fails with an error because we can't write to storage without signing the message
-# --> FunctionCallError(HostError(ProhibitedInView { method_name: "storage_write" }))
-# near view $CONTRACT write '{"key": "some-key", "value":"some value"}'
-near call $CONTRACT write '{"key": "some-key", "value":"some value"}' --accountId $CONTRACT
-
 echo
-echo "now run this script again to see changes made by this file"
+echo 
 exit 0
