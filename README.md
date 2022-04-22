@@ -53,3 +53,9 @@ or RUN
 
 **./scripts/2.getContract.sh **
 
+Finally, selected player adds the storage.
+
+You can see your selected random player on terminal and storage using from https://github.com/near-examples/near-account-utils repostories.
+
+
+
