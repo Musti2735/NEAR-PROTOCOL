@@ -23,7 +23,7 @@ yarn
 
 run yarn build:release
 
-run near dev-delpoy ./build/release/simple.wasm
+run near dev-deploy ./build/release/simple.wasm
 
 export CONTRACT=dev-####-####
 
