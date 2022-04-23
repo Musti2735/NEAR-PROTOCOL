@@ -40,7 +40,7 @@ export function getPlayer(team:string): void {
  export let matic = new Player("Matic","MANU", "Srbia")
  export let salah = new Player("Salah", "LIVERPOOL", "Egypt")
  export let mane = new Player("Mane", "LIVERPOOL", "Senegal")
- export let firmino = new Player("Firminı", "LIVERPOOL", "Brasil")
+ export let firmino = new Player("Firmino", "LIVERPOOL", "Brasil")
 
  // create team
  export let liverpool = [salah, mane, firmino]
