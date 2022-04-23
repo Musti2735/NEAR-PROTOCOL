@@ -12,14 +12,14 @@ When call the contract, the user is given a random player from the selected team
 Install yarn (package manager) from terminal like this:
 install -g yarn
 
-Then install dependencies and node modules using yarn package manager :
-yarn
-
 INSTALL `NEAR CLI` first like this: `npm i -g near-cli`
 npm i -g near-cli
 
 clone this repo to a local folder:
 git clone https://github.com/Musti2735/NEAR-PROTOCOL
+
+Then install dependencies and node modules using yarn package manager :
+yarn
 
 run yarn build:release
 
