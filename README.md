@@ -16,7 +16,7 @@ INSTALL `NEAR CLI` first like this: `npm i -g near-cli`
 npm i -g near-cli
 
 clone this repo to a local folder:
-git clone https://github.com/Musti2735/NEAR-PROTOCOL
+git clone https://github.com/Musti2735/NEAR-Poject-FootballPlayer
 
 Then install dependencies and node modules using yarn package manager :
 yarn
