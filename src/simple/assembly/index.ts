@@ -7,20 +7,22 @@ export function getPlayer(team:string): void {
     context.attachedDeposit >= u128.from("2000000000000000000000000"), //Creating a warning for attached deposit
     "YOU HAVE TO ATTACH MINUMUM 2 NEAR"
   );
+  assert(team.length>0, "You must enter a team !")
   // condition statements according to the selected team
-  if (team=="LIVERPOOL"){
+  let enteredTeam = team.toUpperCase()
+  if (enteredTeam=="LIVERPOOL"){
     let itemLiv = liverpool[rand] 
     logging.log("You have selected Liverpool ! ")
     vec.push(itemLiv);  // write the given value at the given key to account (contract) storage
     logging.log(`Seleceted item added storage : ${itemLiv.name} from ${itemLiv.club}`) //show the selected item to user
   }
-  else if (team=="PSG"){
+  else if (enteredTeam=="PSG"){
     let itemPSG = paris[rand]
     logging.log("You have selected PSG")
     vec.push(itemPSG);  
     logging.log(`Seleceted item added storage : ${itemPSG.name} from ${itemPSG.club}`) 
   }
-  else if (team=="MANU"){ 
+  else if (enteredTeam=="MANU"){ 
     let itemManu = manchester[rand]
     logging.log("You have selected Manchester United")
     vec.push(itemManu);  
